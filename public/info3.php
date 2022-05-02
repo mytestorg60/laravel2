@@ -24,5 +24,6 @@ function phpinfo_array()
 }
 
 // example:
-echo "<pre>".json_encode(phpinfo_array(), 1)."</pre>";
+header('Content-Type: application/json'); 
+echo json_encode(phpinfo_array(), 1);
 ?>
